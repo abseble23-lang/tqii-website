@@ -1,1 +1,294 @@
 
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#003B32">
+<meta name="description" content="Talimul Quran International Institute — শিশু ও প্রাপ্তবয়স্কদের জন্য অনলাইন কোরআন শিক্ষা।">
+<title>TQII | Talimul Quran International Institute</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:#003B32;--g2:#075447;--gold:#D4AF37;--ivory:#F6F3EB;--ink:#182821;--muted:#68766e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Hind Siliguri",sans-serif;color:var(--ink);line-height:1.7}
+.wrap{width:min(1120px,92%);margin:auto}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;background:#fff;z-index:10;border-bottom:1px solid #eee}
+nav{min-height:75px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{font:800 24px Inter;color:var(--g);letter-spacing:2px}
+.logo span{color:var(--gold)}
+nav ul{display:flex;list-style:none;gap:22px;padding:0;flex-wrap:wrap}
+nav a:hover{color:#a27d19}
+button,.btn{border:0;background:var(--gold);color:#17251d;padding:11px 20px;border-radius:5px;font:600 15px "Hind Siliguri";cursor:pointer;display:inline-block}
+.hero{background:linear-gradient(120deg,#002d27,#075447);color:white;padding:95px 0}
+.eyebrow{color:var(--gold);font:700 12px Inter;letter-spacing:2px}
+.hero h1{font-size:clamp(38px,6vw,65px);line-height:1.2;margin:20px 0}
+.hero p{font-size:19px;color:#e0e9e3;max-width:700px}
+.btn2{background:transparent;border:1px solid #d4af37;color:white;margin-left:10px}
+section{padding:75px 0}
+.soft{background:var(--ivory)}
+.center{text-align:center}
+h2{font-size:clamp(28px,4vw,40px);color:var(--g);line-height:1.3;margin:12px 0}
+.lead{color:var(--muted);max-width:700px;margin:0 auto 35px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:-30px;position:relative}
+.trust article,.card,.step{background:#fff;padding:22px;border:1px solid #eee;border-radius:8px}
+.trust b{display:block;color:var(--g)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 30px #003b3215}
+.card h3{color:var(--g);margin:8px 0}
+.card p,.muted{color:var(--muted)}
+.number{color:#a27d19;font:700 12px Inter}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.seal{background:var(--g);color:var(--gold);min-height:290px;display:grid;place-items:center;border-radius:10px;font:800 55px Inter;letter-spacing:5px}
+ul.check{padding-left:20px}
+ul.check li{padding:5px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.step b{font:700 24px Inter;color:#a27d19}
+.step h3{color:var(--g);margin:8px 0}
+.fees{width:100%;border-collapse:collapse;background:white;text-align:left}
+.fees th,.fees td{padding:13px;border-bottom:1px solid #eee}
+.fees th{background:var(--g);color:white}
+.chair{background:var(--g);color:white;padding:35px;border-radius:10px}
+.chair h3{font-size:25px;color:var(--gold)}
+.faq{max-width:800px;margin:auto}
+details{padding:16px 0;border-bottom:1px solid #ddd}
+summary{font-weight:600;color:var(--g);cursor:pointer;font-size:18px}
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:25px}
+.contactbox{background:var(--g);color:white;padding:28px;border-radius:8px}
+.contactbox a{color:var(--gold)}
+form{background:white;padding:25px;border:1px solid #eee;border-radius:8px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{font-weight:600;color:var(--g)}
+input,select,textarea{width:100%;padding:11px;border:1px solid #ddd;border-radius:5px;font:15px "Hind Siliguri";margin-top:5px}
+textarea{min-height:80px}
+.full{grid-column:1/-1}
+footer{background:#002b25;color:#dce6df;padding:45px 0 18px}
+.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px}
+footer h3{color:white}
+footer a{display:block;margin:5px 0}
+.copy{border-top:1px solid #ffffff30;margin-top:30px;padding-top:15px;font-size:13px}
+@media(max-width:750px){
+nav{flex-wrap:wrap;padding:12px 0}
+nav ul{gap:12px;font-size:13px}
+.trust{grid-template-columns:repeat(2,1fr)}
+.grid{grid-template-columns:repeat(2,1fr)}
+.about,.contact{grid-template-columns:1fr}
+.steps{grid-template-columns:repeat(2,1fr)}
+.footgrid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+.hero{padding:65px 0}
+.grid{grid-template-columns:1fr}
+nav ul{width:100%;justify-content:center}
+.btn2{margin:10px 0 0}
+form{grid-template-columns:1fr}
+.full{grid-column:auto}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<nav>
+<a class="logo" href="#home">T<span>QII</span></a>
+<ul>
+<li><a href="#about">আমাদের সম্পর্কে</a></li>
+<li><a href="#courses">কোর্স</a></li>
+<li><a href="#fees">ফি</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">যোগাযোগ</a></li>
+</ul>
+<button id="language">English</button>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="wrap">
+<div class="eyebrow">TALIMUL QURAN INTERNATIONAL INSTITUTE</div>
+<h1 data-bn="কোরআন শিখুন।<br>জীবন আলোকিত করুন।" data-en="Learn the Quran.<br>Transform Your Life.">কোরআন শিখুন।<br>জীবন আলোকিত করুন।</h1>
+<p data-bn="শিশু ও প্রাপ্তবয়স্কদের জন্য অভিজ্ঞ শিক্ষকের তত্ত্বাবধানে সহজ, পরিকল্পিত ও ব্যক্তিকেন্দ্রিক অনলাইন কোরআন শিক্ষা।" data-en="Accessible and personalized online Quran education for children and adults, guided by experienced teachers.">শিশু ও প্রাপ্তবয়স্কদের জন্য অভিজ্ঞ শিক্ষকের তত্ত্বাবধানে সহজ, পরিকল্পিত ও ব্যক্তিকেন্দ্রিক অনলাইন কোরআন শিক্ষা।</p>
+<a class="btn" href="#courses">কোর্স দেখুন</a>
+<a class="btn btn2" href="#contact">ফ্রি ক্লাস বুক করুন</a>
+</div>
+</section>
+
+<div class="wrap trust">
+<article><b>অভিজ্ঞ শিক্ষক</b><span class="muted">যত্নসহকারে পাঠদান</span></article>
+<article><b>ওয়ান-টু-ওয়ান ক্লাস</b><span class="muted">ব্যক্তিকেন্দ্রিক শিক্ষা</span></article>
+<article><b>নমনীয় সময়সূচি</b><span class="muted">সুবিধামতো ক্লাস</span></article>
+<article><b>চার ভাষায় সহায়তা</b><span class="muted">বাংলা, English, Arabic, Urdu</span></article>
+</div>
+
+<section id="about">
+<div class="wrap about">
+<div>
+<div class="eyebrow">WHO WE ARE</div>
+<h2>সবার জন্য সহজ কোরআন শিক্ষা</h2>
+<p>Talimul Quran International Institute (TQII) একটি অনলাইনভিত্তিক শিক্ষা উদ্যোগ। আমাদের লক্ষ্য—বয়স বা অবস্থান নির্বিশেষে প্রত্যেক শিক্ষার্থীর কাছে শুদ্ধ কোরআন শিক্ষা ও ইসলামী জ্ঞান পৌঁছে দেওয়া।</p>
+<ul class="check">
+<li>শিশু ও প্রাপ্তবয়স্কদের জন্য পৃথক পাঠপরিকল্পনা</li>
+<li>শুদ্ধ উচ্চারণ ও তাজবিদের প্রতি গুরুত্ব</li>
+<li>শিক্ষার্থীর অগ্রগতি পর্যবেক্ষণ</li>
+<li>ঘরে বসে অনলাইন লাইভ ক্লাস</li>
+</ul>
+</div>
+<div class="seal">TQII</div>
+</div>
+</section>
+
+<section class="soft" id="courses">
+<div class="wrap center">
+<div class="eyebrow">OUR COURSES</div>
+<h2>আমাদের শিক্ষাক্রম</h2>
+<p class="lead">আপনার প্রয়োজন ও দক্ষতা অনুযায়ী কোর্স বেছে নিন।</p>
+<div class="grid">
+<article class="card"><span class="number">01</span><h3>শিশুদের কোরআন শিক্ষা</h3><p>আরবি হরফ, কায়দা, মাখরাজ, ছোট সূরা ও প্রয়োজনীয় দোয়া।</p></article>
+<article class="card"><span class="number">02</span><h3>বড়দের কোরআন শিক্ষা</h3><p>একেবারে বেসিক থেকে শুদ্ধভাবে কোরআন পড়া শেখা।</p></article>
+<article class="card"><span class="number">03</span><h3>কোরআন তাজবিদসহ শিক্ষা</h3><p>মাখরাজ, সিফাত ও তাজবিদের নিয়মের ব্যবহারিক অনুশীলন।</p></article>
+<article class="card"><span class="number">04</span><h3>হিফজুল কোরআন</h3><p>নতুন সবক, পুনরাবৃত্তি, মানজিল ও নিয়মিত মূল্যায়ন।</p></article>
+<article class="card"><span class="number">05</span><h3>হিফজ রিভিশন</h3><p>মুখস্থ অংশ মজবুত করা ও ধারাবাহিক পুনরাবৃত্তি।</p></article>
+<article class="card"><span class="number">06</span><h3>কোরআন অনুবাদ ও অনুধাবন</h3><p>শব্দে শব্দে অর্থ, আয়াতের অনুবাদ ও প্রাথমিক ব্যাখ্যা।</p></article>
+<article class="card"><span class="number">07</span><h3>আরবি ভাষা ও ব্যাকরণ</h3><p>শব্দভান্ডার, নাহু-সরফ ও বাক্য গঠনের অনুশীলন।</p></article>
+<article class="card"><span class="number">08</span><h3>ইসলামী শিক্ষা</h3><p>আকিদা, ফিকহ, সিরাত ও দৈনন্দিন ইসলামী জ্ঞান।</p></article>
+<article class="card"><span class="number">09</span><h3>সালাত ও দৈনন্দিন দোয়া</h3><p>শুদ্ধ সালাত, প্রয়োজনীয় সূরা, মাসনুন দোয়া ও অর্থ।</p></article>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap center">
+<div class="eyebrow">WHY TQII</div>
+<h2>কেন তালিমুল কোরআন ইন্টারন্যাশনাল ইনস্টিটিউট?</h2>
+<div class="grid">
+<article class="card"><h3>ব্যক্তিকেন্দ্রিক পাঠদান</h3><p>শিক্ষার্থীর বয়স, দক্ষতা ও শেখার গতির ভিত্তিতে পাঠ পরিচালনা।</p></article>
+<article class="card"><h3>অভিজ্ঞ শিক্ষক-শিক্ষিকা</h3><p>প্রয়োজন অনুযায়ী পুরুষ ও মহিলা শিক্ষকের সঙ্গে ক্লাসের সুযোগ।</p></article>
+<article class="card"><h3>লাইভ অনলাইন ক্লাস</h3><p>সরাসরি শিক্ষকের সঙ্গে পড়া, শোনা ও ভুল সংশোধনের সুযোগ।</p></article>
+</div>
+</div>
+</section>
+
+<section class="soft" id="fees">
+<div class="wrap center">
+<div class="eyebrow">COURSE FEES</div>
+<h2>মাসিক কোর্স ফি</h2>
+<p class="lead">নিচের ফি সপ্তাহে ৫ দিনের ক্লাসের জন্য। ৩ দিনের প্যাকেজ ও অন্যান্য তথ্য জানতে যোগাযোগ করুন।</p>
+<table class="fees">
+<thead><tr><th>কোর্স</th><th>মাসিক ফি</th></tr></thead>
+<tbody>
+<tr><td>শিশুদের কোরআন শিক্ষা</td><td>৳ ৫,০০০</td></tr>
+<tr><td>বড়দের কোরআন শিক্ষা</td><td>৳ ৩,৫০০</td></tr>
+<tr><td>তাজবিদ</td><td>যোগাযোগ করুন</td></tr>
+<tr><td>হিফজুল কোরআন</td><td>৳ ৬,০০০</td></tr>
+<tr><td>হিফজ রিভিশন</td><td>৳ ৫,০০০</td></tr>
+<tr><td>কোরআন অনুবাদ</td><td>৳ ৫,০০০</td></tr>
+<tr><td>আরবি ভাষা ও ব্যাকরণ</td><td>৳ ১০,০০০</td></tr>
+<tr><td>ইসলামী শিক্ষা</td><td>যোগাযোগ করুন</td></tr>
+<tr><td>সালাত ও দৈনন্দিন দোয়া</td><td>যোগাযোগ করুন</td></tr>
+</tbody>
+</table>
+<p class="muted">সব ফি বাংলাদেশি টাকা (BDT)।</p>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="chair">
+<div class="eyebrow">MESSAGE FROM THE CHAIRMAN</div>
+<h3>H. M. Abdul Bashir Shibli</h3>
+<p>চেয়ারম্যান, তালিমুল কোরআন ইন্টারন্যাশনাল ইনস্টিটিউট</p>
+<p>আমাদের লক্ষ্য হলো বয়স ও অবস্থান নির্বিশেষে সবার কাছে শুদ্ধ কোরআন শিক্ষা পৌঁছে দেওয়া। কোরআন শেখা একটি জীবনব্যাপী যাত্রা। অভিজ্ঞ শিক্ষক, ব্যক্তিকেন্দ্রিক দিকনির্দেশনা ও আন্তরিক শিক্ষার পরিবেশের মাধ্যমে আমরা সেই যাত্রাকে সহজ করতে প্রতিশ্রুতিবদ্ধ।</p>
+</div>
+</div>
+</section>
+
+<section class="soft">
+<div class="wrap center">
+<div class="eyebrow">HOW IT WORKS</div>
+<h2>চারটি সহজ ধাপে শুরু করুন</h2>
+<div class="steps">
+<article class="step"><b>01</b><h3>কোর্স নির্বাচন</h3><p>আপনার প্রয়োজনীয় কোর্সটি বেছে নিন।</p></article>
+<article class="step"><b>02</b><h3>যোগাযোগ</h3><p>ফরম পূরণ করে প্রয়োজনীয় তথ্য জানান।</p></article>
+<article class="step"><b>03</b><h3>পরিচিতিমূলক ক্লাস</h3><p>শিক্ষকের সঙ্গে ক্লাসের পদ্ধতি বুঝে নিন।</p></article>
+<article class="step"><b>04</b><h3>ক্লাস শুরু</h3><p>সময়সূচি চূড়ান্ত করে নিয়মিত ক্লাস করুন।</p></article>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap center">
+<div class="eyebrow">FAQ</div><h2>সাধারণ জিজ্ঞাসা</h2>
+<div class="faq">
+<details><summary>ক্লাস কি অনলাইনে হয়?</summary><p>হ্যাঁ, TQII-এর ক্লাস অনলাইন লাইভ ভিত্তিক।</p></details>
+<details><summary>একেবারে নতুন শিক্ষার্থী কি ভর্তি হতে পারবে?</summary><p>অবশ্যই। আরবি হরফ ও কায়দার প্রাথমিক স্তর থেকে শেখা শুরু করা যায়।</p></details>
+<details><summary>বড়রাও কি কোরআন শিখতে পারবেন?</summary><p>হ্যাঁ। শিশু ও প্রাপ্তবয়স্ক—সবার জন্য কোর্স রয়েছে।</p></details>
+<details><summary>মহিলা শিক্ষিকা পাওয়া যাবে?</summary><p>প্রয়োজন অনুযায়ী মহিলা শিক্ষিকার সঙ্গে ক্লাসের ব্যবস্থা সম্পর্কে যোগাযোগ করে জেনে নিতে পারবেন।</p></details>
+<details><summary>ক্লাসের সময় কীভাবে নির্ধারিত হয়?</summary><p>শিক্ষক ও শিক্ষার্থীর পারস্পরিক সুবিধা অনুযায়ী সময় নির্ধারণ করা হয়।</p></details>
+</div>
+</div>
+</section>
+
+<section class="soft" id="contact">
+<div class="wrap center">
+<div class="eyebrow">ADMISSION & CONTACT</div>
+<h2>আপনার শেখার যাত্রা শুরু হোক আজই</h2>
+<p class="lead">নিচের তথ্য পাঠান। আমাদের টিম WhatsApp-এর মাধ্যমে যোগাযোগ করবে।</p>
+<div class="contact">
+<div class="contactbox">
+<h3>যোগাযোগ করুন</h3>
+<p>WhatsApp / Phone<br><a href="https://wa.me/8801898440611">01898440611</a></p>
+<p>Email<br><a href="mailto:talimulquraninternational@gmail.com">talimulquraninternational@gmail.com</a></p>
+<p>সাভার, ঢাকা, বাংলাদেশ</p>
+<p>ক্লাস: অনলাইন লাইভ</p>
+<a class="btn" href="https://wa.me/8801898440611">WhatsApp মেসেজ</a>
+</div>
+<form id="admission">
+<div><label>শিক্ষার্থীর নাম<input name="name" required></label></div>
+<div><label>বয়স<input name="age" type="number" required></label></div>
+<div><label>দেশ<input name="country" required></label></div>
+<div><label>WhatsApp নম্বর<input name="phone" type="tel" required></label></div>
+<div class="full"><label>পছন্দের কোর্স<select name="course" required><option value="">কোর্স নির্বাচন করুন</option><option>Kids Quran</option><option>Adults Quran</option><option>Quran with Tajweed</option><option>Hifzul Quran</option><option>Hifz Revision</option><option>Quran Translation</option><option>Arabic Language & Grammar</option><option>Islamic Studies</option><option>Salah & Daily Duas</option></select></label></div>
+<div><label>সপ্তাহে কয় দিন<select name="days"><option>3 days</option><option>5 days</option></select></label></div>
+<div><label>পছন্দের সময়<input name="time" placeholder="8:00 PM"></label></div>
+<div class="full"><label>অতিরিক্ত তথ্য<textarea name="note"></textarea></label></div>
+<button class="full" type="submit">WhatsApp-এ তথ্য পাঠান</button>
+<p class="full muted">এই ফরম WhatsApp খুলবে; ওয়েবসাইটে তথ্য সংরক্ষণ করা হয় না।</p>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="footgrid">
+<div><h3>TQII</h3><p>প্রাপ্তবয়স্ক ও শিশু—সকলের জন্য সহজ কোরআন শিক্ষা।</p><b style="color:#D4AF37">Learn the Quran. Transform Your Life.</b></div>
+<div><h3>দ্রুত লিংক</h3><a href="#about">আমাদের সম্পর্কে</a><a href="#courses">কোর্সসমূহ</a><a href="#fees">কোর্স ফি</a><a href="#faq">FAQ</a></div>
+<div><h3>যোগাযোগ</h3><a href="https://wa.me/8801898440611">01898440611</a><a href="mailto:talimulquraninternational@gmail.com">talimulquraninternational@gmail.com</a><a href="https://facebook.com/share/14ua5ts5Ujv/">Facebook Page</a></div>
+</div>
+<div class="copy">© <span id="year"></span> Talimul Quran International Institute. All rights reserved.</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('admission').addEventListener('submit',function(e){
+e.preventDefault();
+const f=new FormData(this);
+const msg='TQII Admission Enquiry\nStudent: '+f.get('name')+'\nAge: '+f.get('age')+'\nCountry: '+f.get('country')+'\nWhatsApp: '+f.get('phone')+'\nCourse: '+f.get('course')+'\nDays: '+f.get('days')+'\nTime: '+f.get('time')+'\nNote: '+f.get('note');
+window.open('https://wa.me/8801898440611?text='+encodeURIComponent(msg),'_blank');
+});
+document.getElementById('language').addEventListener('click',function(){
+const english=this.textContent==='English';
+this.textContent=english?'বাংলা':'English';
+document.documentElement.lang=english?'en':'bn';
+document.querySelectorAll('[data-bn][data-en]').forEach(el=>el.innerHTML=english?el.dataset.en:el.dataset.bn);
+});
+</script>
+</body>
+</html>
+
