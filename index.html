@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="bn">
 <head>
@@ -27,6 +26,12 @@ button,.btn{border:0;background:var(--gold);color:#17251d;padding:11px 20px;bord
 .hero h1{font-size:clamp(38px,6vw,65px);line-height:1.2;margin:20px 0}
 .hero p{font-size:19px;color:#e0e9e3;max-width:700px}
 .btn2{background:transparent;border:1px solid #d4af37;color:white;margin-left:10px}
+.cta-panel{margin:28px auto 0;max-width:760px;background:linear-gradient(135deg, rgba(212,175,55,.12), rgba(255,255,255,.08));border:1px solid rgba(212,175,55,.4);border-radius:18px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px;box-shadow:0 12px 26px rgba(0,0,0,.08)}
+.cta-copy{display:flex;flex-direction:column;gap:4px}
+.cta-copy strong{font-size:clamp(18px,2.3vw,28px);color:#fff}
+.cta-copy span{color:#ecf0ee;font-size:15px}
+.cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#d4af37,#f1d98a);color:#16221d;font-weight:800;padding:14px 22px;border-radius:12px;box-shadow:0 14px 26px rgba(212,175,55,.28);transition:transform .2s ease, box-shadow .2s ease}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 18px 28px rgba(212,175,55,.38)}
 section{padding:75px 0}
 .soft{background:var(--ivory)}
 .center{text-align:center}
@@ -77,6 +82,7 @@ nav ul{gap:12px;font-size:13px}
 .about,.contact{grid-template-columns:1fr}
 .steps{grid-template-columns:repeat(2,1fr)}
 .footgrid{grid-template-columns:1fr}
+.cta-panel{flex-direction:column;align-items:flex-start}
 }
 @media(max-width:480px){
 .hero{padding:65px 0}
@@ -85,6 +91,8 @@ nav ul{width:100%;justify-content:center}
 .btn2{margin:10px 0 0}
 form{grid-template-columns:1fr}
 .full{grid-column:auto}
+.cta-panel{padding:16px 18px}
+.cta-btn{width:100%}
 }
 </style>
 </head>
@@ -111,9 +119,16 @@ form{grid-template-columns:1fr}
 <div class="wrap">
 <div class="eyebrow">TALIMUL QURAN INTERNATIONAL INSTITUTE</div>
 <h1 data-bn="কোরআন শিখুন।<br>জীবন আলোকিত করুন।" data-en="Learn the Quran.<br>Transform Your Life.">কোরআন শিখুন।<br>জীবন আলোকিত করুন।</h1>
-<p data-bn="শিশু ও প্রাপ্তবয়স্কদের জন্য অভিজ্ঞ শিক্ষকের তত্ত্বাবধানে সহজ, পরিকল্পিত ও ব্যক্তিকেন্দ্রিক অনলাইন কোরআন শিক্ষা।" data-en="Accessible and personalized online Quran education for children and adults, guided by experienced teachers.">শিশু ও প্রাপ্তবয়স্কদের জন্য অভিজ্ঞ শিক্ষকের তত্ত্বাবধানে সহজ, পরিকল্পিত ও ব্যক্তিকেন্দ্রিক অনলাইন কোরআন শিক্ষা।</p>
+<p data-bn="শিশু ও প্রাপ্তবয়স্কদের জন্য অভিজ্ঞ শিক্ষকের তত্ত্বাবধানে সহজ, personalise, ও কার্যকর কোরআন শিক্ষা।" data-en="Accessible and personalized online Quran education for children and adults, guided by experienced teachers.">শিশু ও প্রাপ্তবয়স্কদের জন্য অভিজ্ঞ শিক্ষকের তত্ত্বাবধানে সহজ, personalise, ও কার্যকর কোরআন শিক্ষা।</p>
 <a class="btn" href="#courses">কোর্স দেখুন</a>
 <a class="btn btn2" href="#contact">ফ্রি ক্লাস বুক করুন</a>
+<div class="cta-panel">
+<div class="cta-copy">
+<strong>কোরআন অনুবাদ অনুশীলন শুরু করুন</strong>
+<span>শুদ্ধভাবে অর্থ বুঝে পড়ার জন্য বিশেষ কোর্সে ভর্তি হন</span>
+</div>
+<a class="cta-btn" href="https://talimul-quran.vercel.app/?course=translation" target="_blank" rel="noopener noreferrer">কোর্সে যান →</a>
+</div>
 </div>
 </section>
 
@@ -129,7 +144,7 @@ form{grid-template-columns:1fr}
 <div>
 <div class="eyebrow">WHO WE ARE</div>
 <h2>সবার জন্য সহজ কোরআন শিক্ষা</h2>
-<p>Talimul Quran International Institute (TQII) একটি অনলাইনভিত্তিক শিক্ষা উদ্যোগ। আমাদের লক্ষ্য—বয়স বা অবস্থান নির্বিশেষে প্রত্যেক শিক্ষার্থীর কাছে শুদ্ধ কোরআন শিক্ষা ও ইসলামী জ্ঞান পৌঁছে দেওয়া।</p>
+<p>Talimul Quran International Institute (TQII) একটি অনলাইনভিত্তিক শিক্ষা উদ্যোগ। আমাদের লক্ষ্য—বয়স বা অবস্থান নির্বিশেষে প্রত্যেক শিক্ষার্থীর কাছে শুদ্ধ কোরআন শিক্ষা ও ইসলামী জ্ঞান পৌঁছে দেওয়���।</p>
 <ul class="check">
 <li>শিশু ও প্রাপ্তবয়স্কদের জন্য পৃথক পাঠপরিকল্পনা</li>
 <li>শুদ্ধ উচ্চারণ ও তাজবিদের প্রতি গুরুত্ব</li>
@@ -150,12 +165,12 @@ form{grid-template-columns:1fr}
 <article class="card"><span class="number">01</span><h3>শিশুদের কোরআন শিক্ষা</h3><p>আরবি হরফ, কায়দা, মাখরাজ, ছোট সূরা ও প্রয়োজনীয় দোয়া।</p></article>
 <article class="card"><span class="number">02</span><h3>বড়দের কোরআন শিক্ষা</h3><p>একেবারে বেসিক থেকে শুদ্ধভাবে কোরআন পড়া শেখা।</p></article>
 <article class="card"><span class="number">03</span><h3>কোরআন তাজবিদসহ শিক্ষা</h3><p>মাখরাজ, সিফাত ও তাজবিদের নিয়মের ব্যবহারিক অনুশীলন।</p></article>
-<article class="card"><span class="number">04</span><h3>হিফজুল কোরআন</h3><p>নতুন সবক, পুনরাবৃত্তি, মানজিল ও নিয়মিত মূল্যায়ন।</p></article>
+<article class="card"><span class="number">04</span><h3>হিফজুল কোরআন</h3><p>নতুন সবক, পুনরাবৃত্তি, মানজিল ও নিয়মিত চর্চা।</p></article>
 <article class="card"><span class="number">05</span><h3>হিফজ রিভিশন</h3><p>মুখস্থ অংশ মজবুত করা ও ধারাবাহিক পুনরাবৃত্তি।</p></article>
-<article class="card"><span class="number">06</span><h3>কোরআন অনুবাদ ও অনুধাবন</h3><p>শব্দে শব্দে অর্থ, আয়াতের অনুবাদ ও প্রাথমিক ব্যাখ্যা।</p></article>
-<article class="card"><span class="number">07</span><h3>আরবি ভাষা ও ব্যাকরণ</h3><p>শব্দভান্ডার, নাহু-সরফ ও বাক্য গঠনের অনুশীলন।</p></article>
+<article class="card"><span class="number">06</span><h3>কোরআন অনুবাদ ও অনুধাবন</h3><p>শব্দে শব্দে অর্থ, আয়াতের অনুধাবন ও ব্যবহারিক ব্যাখ্যা।</p></article>
+<article class="card"><span class="number">07</span><h3>আরবি ভাষা ও ব্যাকরণ</h3><p>শব্দভান্ডার, নাহু-সরফ ও বাক্য গঠন।</p></article>
 <article class="card"><span class="number">08</span><h3>ইসলামী শিক্ষা</h3><p>আকিদা, ফিকহ, সিরাত ও দৈনন্দিন ইসলামী জ্ঞান।</p></article>
-<article class="card"><span class="number">09</span><h3>সালাত ও দৈনন্দিন দোয়া</h3><p>শুদ্ধ সালাত, প্রয়োজনীয় সূরা, মাসনুন দোয়া ও অর্থ।</p></article>
+<article class="card"><span class="number">09</span><h3>সালাত ও দৈনন্দিন দোয়া</h3><p>শুদ্ধ সালাত, প্রয়োজনীয় সূরা, ও দোয়ার অনুশীলন।</p></article>
 </div>
 </div>
 </section>
@@ -166,8 +181,8 @@ form{grid-template-columns:1fr}
 <h2>কেন তালিমুল কোরআন ইন্টারন্যাশনাল ইনস্টিটিউট?</h2>
 <div class="grid">
 <article class="card"><h3>ব্যক্তিকেন্দ্রিক পাঠদান</h3><p>শিক্ষার্থীর বয়স, দক্ষতা ও শেখার গতির ভিত্তিতে পাঠ পরিচালনা।</p></article>
-<article class="card"><h3>অভিজ্ঞ শিক্ষক-শিক্ষিকা</h3><p>প্রয়োজন অনুযায়ী পুরুষ ও মহিলা শিক্ষকের সঙ্গে ক্লাসের সুযোগ।</p></article>
-<article class="card"><h3>লাইভ অনলাইন ক্লাস</h3><p>সরাসরি শিক্ষকের সঙ্গে পড়া, শোনা ও ভুল সংশোধনের সুযোগ।</p></article>
+<article class="card"><h3>অভিজ্ঞ শিক্ষক-শিক্ষিকা</h3><p>প্রয়োজন অনুযায়ী পুরুষ ও মহিলা শিক্ষক-শিক্ষিকা।</p></article>
+<article class="card"><h3>লাইভ অনলাইন ক্লাস</h3><p>সরাসরি শিক্ষকের সঙ্গে পড়া, শোনা ও ভুল সংশোধন।</p></article>
 </div>
 </div>
 </section>
@@ -176,7 +191,7 @@ form{grid-template-columns:1fr}
 <div class="wrap center">
 <div class="eyebrow">COURSE FEES</div>
 <h2>মাসিক কোর্স ফি</h2>
-<p class="lead">নিচের ফি সপ্তাহে ৫ দিনের ক্লাসের জন্য। ৩ দিনের প্যাকেজ ও অন্যান্য তথ্য জানতে যোগাযোগ করুন।</p>
+<p class="lead">নিচের ফি সপ্তাহে ৫ দিনের ক্লাসের জন্য। ৩ দিনের প্যাকেজ ও অন্যান্য বিস্তারিত জানতে যোগাযোগ করুন।</p>
 <table class="fees">
 <thead><tr><th>কোর্স</th><th>মাসিক ফি</th></tr></thead>
 <tbody>
@@ -201,7 +216,7 @@ form{grid-template-columns:1fr}
 <div class="eyebrow">MESSAGE FROM THE CHAIRMAN</div>
 <h3>H. M. Abdul Bashir Shibli</h3>
 <p>চেয়ারম্যান, তালিমুল কোরআন ইন্টারন্যাশনাল ইনস্টিটিউট</p>
-<p>আমাদের লক্ষ্য হলো বয়স ও অবস্থান নির্বিশেষে সবার কাছে শুদ্ধ কোরআন শিক্ষা পৌঁছে দেওয়া। কোরআন শেখা একটি জীবনব্যাপী যাত্রা। অভিজ্ঞ শিক্ষক, ব্যক্তিকেন্দ্রিক দিকনির্দেশনা ও আন্তরিক শিক্ষার পরিবেশের মাধ্যমে আমরা সেই যাত্রাকে সহজ করতে প্রতিশ্রুতিবদ্ধ।</p>
+<p>আমাদের লক্ষ্য হলো বয়স ও অবস্থান নির্বিশেষে সবার কাছে শুদ্ধ কোরআন শিক্ষা পৌঁছে দেওয়া।</p>
 </div>
 </div>
 </section>
@@ -224,10 +239,10 @@ form{grid-template-columns:1fr}
 <div class="eyebrow">FAQ</div><h2>সাধারণ জিজ্ঞাসা</h2>
 <div class="faq">
 <details><summary>ক্লাস কি অনলাইনে হয়?</summary><p>হ্যাঁ, TQII-এর ক্লাস অনলাইন লাইভ ভিত্তিক।</p></details>
-<details><summary>একেবারে নতুন শিক্ষার্থী কি ভর্তি হতে পারবে?</summary><p>অবশ্যই। আরবি হরফ ও কায়দার প্রাথমিক স্তর থেকে শেখা শুরু করা যায়।</p></details>
-<details><summary>বড়রাও কি কোরআন শিখতে পারবেন?</summary><p>হ্যাঁ। শিশু ও প্রাপ্তবয়স্ক—সবার জন্য কোর্স রয়েছে।</p></details>
-<details><summary>মহিলা শিক্ষিকা পাওয়া যাবে?</summary><p>প্রয়োজন অনুযায়ী মহিলা শিক্ষিকার সঙ্গে ক্লাসের ব্যবস্থা সম্পর্কে যোগাযোগ করে জেনে নিতে পারবেন।</p></details>
-<details><summary>ক্লাসের সময় কীভাবে নির্ধারিত হয়?</summary><p>শিক্ষক ও শিক্ষার্থীর পারস্পরিক সুবিধা অনুযায়ী সময় নির্ধারণ করা হয়।</p></details>
+<details><summary>একেবারে নতুন শিক্ষার্থী কি ভর্তি হতে পারবে?</summary><p>অবশ্যই। আরবি হরফ ও বেসিক কায়দা শুরু করে আমরা ধাপে ধাপে শেখাই।</p></details>
+<details><summary>বড়রাও কি কোরআন শিখতে পারবেন?</summary><p>হ্যাঁ। শিশু ও প্রাপ্তবয়স্ক—সবার জন্য আলাদা পাঠপরিকল্পনা রয়েছে।</p></details>
+<details><summary>মহিলা শিক্ষিকা পাওয়া যাবে?</summary><p>প্রয়োজন অনুযায়ী মহিলা শিক্ষিকার ব্যবস্থা রয়েছে।</p></details>
+<details><summary>ক্লাসের সময় কীভাবে নির্ধারিত হয়?</summary><p>শিক্ষক ও শিক্ষার্থীর পারস্পরিক সুবিধা অনুযায়ী সময় ঠিক করা হয়।</p></details>
 </div>
 </div>
 </section>
@@ -291,4 +306,3 @@ document.querySelectorAll('[data-bn][data-en]').forEach(el=>el.innerHTML=english
 </script>
 </body>
 </html>
-
